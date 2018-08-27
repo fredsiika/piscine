@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo "==> 👢 Bootstrapping"
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
