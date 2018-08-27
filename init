@@ -1,1 +1,1 @@
-
+osascript welcome.scpt ${LOGNAME}
