@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Open current directory
+# Use: `o` with no arguments will opens the current directory in Finder (Finder.app).
+function o(){
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
