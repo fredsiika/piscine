@@ -13,7 +13,7 @@ You can clone the repository wherever you want (I like to keep it in `~/Piscine/
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/fredsiika/piscine.git && cd dotfiles/piscine && source bootstrap.sh
+git clone https://github.com/fredsiika/piscine.git && cd piscine/dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -45,8 +45,8 @@ Fortunately there's a workaround by changing the directory where npm is installe
 
 **To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, it will be a hidden directory on your home folder.**
 
-Make a directory for global installations:
-1. ```bash
+1. Make a directory for global installations:
+```bash
 mkdir ~/.npm-global
 ```
 
@@ -76,11 +76,10 @@ Suggestions/improvements
 
 ## Author
 
-| [![twitter/fredsiika](http://gravatar.com/avatar/insert-gravatar-hash)](http://twitter.com/fredsiika "Follow @fredsiika on Twitter") |
-|---|https://twitter.com/fredsiika/photo
-| [Fred Siika](https://github.com/fredsiika/) |
+[twitter/fredsiika](http://twitter.com/fredsiika "Follow @fredsiika on Twitter")
+[Fred Siika](https://github.com/fredsiika/)
 
-## Thanks to…
+## Thanks to the following for inspiration.…
 * [Mathias Bynens](https://mathiasbynens.be/)
 * @ptb and [his _macOS Setup_ repository](https://github.com/ptb/mac-setup)
 * [Cătălin Mariș](https://github.com/alrra) and his [dotfiles repository](https://github.com/alrra/dotfiles)
