@@ -1,0 +1,24 @@
+{
+  "name": "piscine",
+  "version": "1.0.0",
+  "description": "🔧 42 Silicon Valley Piscine ~/.macos configuration files and dot-files (.files) for iMac",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredsiika/piscine.git"
+  },
+  "keywords": [
+    "42-piscine",
+    "dotfiles",
+    "42SiliconValley"
+  ],
+  "author": "Fred C. Siika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredsiika/piscine/issues"
+  },
+  "homepage": "https://github.com/fredsiika/piscine#readme"
+}
