@@ -3,7 +3,7 @@
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
-} 
+}
 
 # Change working directory to the top-most Finder window location
 function cdf() { # short for `cdfinder`
@@ -168,111 +168,4 @@ function o() {
 # small enough for one screen.
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-}
-
-# Open the 42 Silicon Valley Intra Website via Chrome Browser
-# function 42intra() {
-# 	if [ -z "${1}" ]; then
-# 		echo "42 Intra: No day specified.\n";
-# 		echo "Opening your list of projects. Hope you like the chrome browser...";
-# 		chrome "https://projects.intra.42.fr/projects/list";
-# 		# return 1;
-# 	fi;
-
-# 	local domain="https://projects.intra.42.fr/projects/piscine-c-day-${1}";
-# 	echo "Opening ${domain}…";
-# 	echo ""; # newline
-
-# 	if [ $# -eq 0 ]; then
-# 		echo "Opening your list of projects. Hope you like the chrome browser."
-# 		chrome "https://projects.intra.42.fr/projects/list";
-# 	else
-
-# 	local day="${00:-13}";
-# 	sleep 1 && chrome "https://projects.intra.42.fr/projects/piscine-c-day-${day}"
-# }
-
-# 
-function 42day() {
-	# if [ $@ <= '14' ]; then
-	# 	echo "42 Intra: Sorry, that resource doesn't exist"
-	# 	return 1;
-	# fi;
-
-	if [ $# -eq 0 ]; then
-		echo -e "42 Intra: No day specified.\n"
-		echo "Opening your list of projects. Hope you like the chrome browser...";
-		sleep 1 && chrome "https://projects.intra.42.fr/projects/list";
-	else
-		echo "42 Intra: Opening Piscine Day ${@}."
-		sleep 1 && chrome "https://projects.intra.42.fr/projects/piscine-c-day-$@";
-	fi;
-}
-
-function 42campus() {
-	if [ $# -eq 0 ]; then
-		echo -e "42 Campus: Opening the creepy 42 Campus Map";
-		sleep 1 && chrome "https://campus.42.us.org/";
-	else
-		echo "42 Campus: Searching for User ${@}.";
-		sleep 1 && chrome "https://campus.42.us.org/?login=${@}";
-	fi;
-}
-
-# Create new project directory and subdirectories
-
-function 42intra() {
-	echo -n "Hello ${USER}, You are now entering the 42 Intra terminal.";
-	echo "";
-	echo -n "Proceed [y/n]: "; 
-	read -n 1 ans;
-	echo "";	
-	if [[ $ans =~ ^[Yy]$ ]]; then
-		echo -n "Enter the Piscine Day #: "
-		
-		# 42intra;	
-	fi
-	if [[ $REPLY =~ ^[Nn]$ ]]; then
-		echo -e "Exiting Intra Terminal Goodbye..."
-		sleep 1;
-		return 1;
-	fi
-	# if [ -z "${1}" ]; then
-	# 	echo "42 Intra: Error, no day specified"
-	# 	return 1;
-	# fi;
-}
-
-# 	if [ -n "${@}" ] && [ "${@}" -ge 14 ]
-# 	echo -e "Only Day00-13 alowed"
-
-# 	local piscineDay="${00..13}"
-# 	local intraDomain="https://projects.intra.42.fr/piscine-c-day-${1}";
-	
-
-	
-# 	mkdir -v ex{00..04}
-# 	curl "https://cdn.intra.42.fr/pdf/pdf/820/d06.en.pdf" -o ~/Piscine/subjects/day${@}/subject.en.txt
-# }
-
-# Github User search function
-function github() {
-	if [ $# -eq 0 ]; then
-		echo -e "Github: No user specified."
-		echo "";
-		sleep 1 && chrome "https://github.com/login?return_to=%2F$@";
-	else
-		echo "Github: Opening ${@}'s Github Profile."
-		sleep 1 && chrome "https://github.com/login?return_to=%2F$@";
-	fi;
-}
-
-function 42user() {
-	if [ $# -eq 0 ]; then
-		echo -e "42 User: No user specified."
-	return 1;
-	else
-		echo -e "42 User: Searching for the following user: ${@}.";
-		sleep 1 && chrome "https://profile.intra.42.fr/users/$@"
-	fi;
 }

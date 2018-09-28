@@ -46,12 +46,3 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
-
-# Git add all
-alias g a="git add ."
-
-# Git push
-alias g p="git push"
-
-# Short to Git add & git commit -m & git push
-alias gacp="git add . && git commit -m '$@' && git push"
