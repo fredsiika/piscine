@@ -9,11 +9,10 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents"
-alias db="cd ~/Documents/Dropbox"
+alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd ~/projects"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -161,38 +160,4 @@ alias chrome='open -a /Applications/Google\ Chrome.app'
 alias spotify='open -a /Applications/Spotify.app'
 
 # View the current size of our terminal window
-alias term_size=`echo "Rows=$(tput lines) Cols=$(tput cols)"`
-
-# Github Aliases
-alias githubuser="chrome https://github.com/login?return_to=%2F${@}"
-
-# 42 Silicon Valley Specific Shortcuts for easier navigation
-# Note: You should probably replace these paths according to your local environment.
-alias pi="cd ~/Piscine"
-alias piscine="cd ~/Piscine"
-alias towel="cd ~/Piscine/towel"
-alias d00="cd ~/Piscine/day00"
-alias d01="cd ~/Piscine/day01"
-alias d02="cd ~/Piscine/day02"
-alias d03="cd ~/Piscine/day03"
-alias d04="cd ~/Piscine/day04"
-alias d05="cd ~/Piscine/day05"
-alias d06="cd ~/Piscine/day06"
-alias d07="cd ~/Piscine/day07"
-alias d08="cd ~/Piscine/day08"
-alias d09="cd ~/Piscine/day09"
-alias d10="cd ~/Piscine/day10"
-
-# 42 Silicon Valley Online Intra Navigation
-# alias 42="chrome https://intra.42.fr"
-# alias intra="chrome https://intra.42.fr"
-# alias 42intra="chrome https://intra.42.fr"
-# alias 42projects="chrome https://projects.intra.42.fr/projects/list"
-alias 42home="chrome https://profile.intra.42.fr/"
-alias 42profile="chrome https://profile.intra.42.fr/"
-alias 42videos="chrome https://elearning.intra.42.fr/"
-alias 42forum="chrome https://forum.intra.42.fr/"
-alias 42shop="chrome https://shop.intra.42.fr/"
-alias 42holy="chrome https://projects.intra.42.fr/projects/graph?login=frsiika"
-alias 42graph="chrome https://projects.intra.42.fr/projects/graph?login=frsiika"
-alias 42slots="chrome https://profile.intra.42.fr/slots"
+alias term_size=`echo "Rows=$(tput lines) Cols=$(tput cols)"'
