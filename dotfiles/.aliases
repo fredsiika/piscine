@@ -8,6 +8,10 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Easier restarting of Shell
+alias ss="source ~/Projects/piscine/dotfiles/.bash_profile"
+alias ssbashrc="source ~/Projects/piscine/dotfiles/.bash_profile"
+
 # Shortcuts
 alias d="cd ~/Documents"
 alias db="cd ~/Documents/Dropbox"

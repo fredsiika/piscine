@@ -1,0 +1,64 @@
+# Shell Integration
+
+## How To Enable Shell Integration
+
+The easiest way to install shell integration is to select the iTerm2>Install Shell Integration menu item. It will download and run a shell script as described below. You should do this on every host you ssh to as well as your local machine. The following shells are supported: tcsh, zsh, bash, and fish 2.3 or later. Contributions for other shells are most welcome.
+
+When you select the iTerm2>Install Shell Integration menu item, it types this for you:
+
+```sh
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+```
+
+Don't care for piping curl to bash? Do it by hand. This is also what you must do if you use a shell that isn't your login shell. Select your shell to see the appropriate instructions:
+
+- For zsh:
+```sh
+curl -L https://iterm2.com/shell_integration/zsh \
+-o ~/.iterm2_shell_integration.zsh
+```
+
+Next, you need to load the script at login time. Add this to the end of ~/.zshrc:
+
+```sh
+source ~/.iterm2_shell_integration.zsh
+```
+
+- For bash:
+```sh
+curl -L https://iterm2.com/shell_integration/bash \
+-o ~/.iterm2_shell_integration.bash
+```
+Next, you need to load the script at login time. You need to add the following command to ~/.bash_profile or ~/.profile. If you already have .profile then add it there, otherwise add it to .bash_profile. Put it at the end because other scripts may overwrite the settings it needs, such as `PROMPT_COMMAND`.
+
+```sh
+source ~/.iterm2_shell_integration.bash
+```
+
+Don't want to or can't install a login script? See the workaround at the end of this document using triggers.
+
+## Features
+This integration enables numerous features:
+
+### Feature 1: Marks
+- Benefit/Description: These are saved locations in history. They make it easy to navigate to previous shell prompts or other locations of interest.
+
+### Feature 2: Alert when current command finishes running.
+- Benefit/Description: iTerm2 will present a modal alert when a long-running command finishes, if you ask it to.
+
+### Feature 3: Easy access to recently and frequently used directories.
+= Benefit/Description: iTerm2 remembers the directories you use, sorting them by "frecency" and giving you access to them in the toolbelt and in a popup window.
+
+### Feature 4: Assign profiles to hostnames, usernames, or username+hostname combinations.
+- Benefit/Description: Sessions will automatically switch profiles as you log in and out according to rules you define.
+
+## How it works
+Shell Integration works by configuring your shell on each host you log into to send special escape codes that convey the following information:
+- Where the command prompt begins and ends.
+- Where a command entered at the command prompt ends and its output begins.
+- The return code of the last-run command.
+- Your username.
+- The current host name.
+- The current directory.
+
+
