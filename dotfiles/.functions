@@ -229,7 +229,7 @@ function 42intra() {
 	echo "";	
 	if [[ $ans =~ ^[Yy]$ ]]; then
 		echo -n "Enter the Piscine Day #: "
-		
+		echo 
 		# 42intra;	
 	fi
 	if [[ $REPLY =~ ^[Nn]$ ]]; then
@@ -262,8 +262,15 @@ function github() {
 		echo "";
 		sleep 1 && chrome "https://github.com/login?return_to=%2F$@";
 	else
-		echo "Github: Opening ${@}'s Github Profile."
+		echo "Github: Opening ${@}'s Github Profile...."
 		sleep 1 && chrome "https://github.com/login?return_to=%2F$@";
+	fi;
+}
+
+function githubsearch() {
+	if [ "$#" -eq 0 ]; then
+	echo -e "Searching for available repositories..."
+	chrome "https://github.com/search?q=$@&type=Repositories";
 	fi;
 }
 
