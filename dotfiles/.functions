@@ -269,8 +269,12 @@ function github() {
 
 function githubsearch() {
 	if [ "$#" -eq 0 ]; then
+	echo -n "What's good ${USER}, ";
+	echo "";
+	echo -n "Enter Seach Query: "; 
+	read -n 1 answer;
 	echo -e "Searching for available repositories..."
-	chrome "https://github.com/search?q=$@&type=Repositories";
+	chrome "https://github.com/search?q=$answer&type=Repositories";
 	fi;
 }
 
