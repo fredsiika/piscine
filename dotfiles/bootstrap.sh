@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-echo "==> 👢 Bootstrapping"
+echo "==> 👢 Bootstrapping with Fred Siika's Dotfiles"
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
+echo "==> 🔌 Pulling from the origin master..."
 
 function doIt() {
 	rsync --exclude ".git/" \
@@ -19,7 +20,9 @@ function doIt() {
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	echo "This may overwrite existing files in your home directory.";
+	echo ""; 
+	read -p "Are you about that life or nah? (y/n) " -n 1;
 	echo "";
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt;
