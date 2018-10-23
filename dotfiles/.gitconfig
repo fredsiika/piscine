@@ -185,3 +185,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+  name = Fred Siika
+  email = fredsiika@gmail.com
