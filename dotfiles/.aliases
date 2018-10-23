@@ -201,3 +201,7 @@ alias 42shop="chrome https://shop.intra.42.fr/"
 alias 42holy="chrome https://projects.intra.42.fr/projects/graph?login=frsiika"
 alias 42graph="chrome https://projects.intra.42.fr/projects/graph?login=frsiika"
 alias 42slots="chrome https://profile.intra.42.fr/slots"
+
+# iTerm2.app / iTerm.app
+alias iterm="open -a /Application/iTerm.app"
+
