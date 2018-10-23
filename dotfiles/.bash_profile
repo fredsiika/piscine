@@ -48,3 +48,6 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 #source ~/.bash_profile
+
+# Add brew --prefix coreutils to path
+export PATH="$PATH/:$(brew --prefix coreutils)/libexec/gnubin"
