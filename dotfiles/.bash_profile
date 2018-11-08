@@ -51,3 +51,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Add brew --prefix coreutils to path
 export PATH="$PATH/:$(brew --prefix coreutils)/libexec/gnubin"
+
+# Add mysql server to path
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+source ~/.bash_profile
