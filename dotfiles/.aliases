@@ -205,3 +205,6 @@ alias 42slots="chrome https://profile.intra.42.fr/slots"
 # iTerm2.app / iTerm.app
 alias iterm="open -a /Application/iTerm.app"
 
+# The LLDB Debugger / Development Environment for compiling C/C++
+alias gcc='gcc -g -Wall -Wextra -Werror'
+
