@@ -208,3 +208,5 @@ alias iterm="open -a /Application/iTerm.app"
 # The LLDB Debugger / Development Environment for compiling C/C++
 alias gcc='gcc -g -Wall -Wextra -Werror'
 
+# GIT: Show all ignored files
+alias ignored="git ls-files --others -i --exclude-standard"
