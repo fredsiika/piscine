@@ -55,4 +55,4 @@ export PATH="$PATH/:$(brew --prefix coreutils)/libexec/gnubin"
 # Add mysql server to path
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
-source ~/.bash_profile
+#source ~/.bash_profile
