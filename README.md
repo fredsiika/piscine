@@ -1,7 +1,7 @@
 # Fred Siika's Piscine Dotfiles
 42 Silicon Valley August 2018 Piscine dotfiles and iMac configuration
 ---
-![Screenshot of my shell prompt](https://i.imgur.com/{customhash.png)
+[![asciicast](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU.svg)](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10)
 
 ## Installation
 
