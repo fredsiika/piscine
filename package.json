@@ -4,7 +4,14 @@
   "description": "🔧 42 Silicon Valley Piscine ~/.macos configuration files and dot-files (.files) for iMac",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "collaborator:join": "git-signed --join",
+    "collaborator:export-key": "git-signed --export",
+    "collaborator:sync-keys": "git-signed --sync",
+    "test:commit-signatures": "git-signed ad713da",
+    "precommit": "npm run test",
+    "postcommit": "npm run test:commit-signatures",
+    "postmerge": "npm install && npm run collaborator:sync-keys",
+    "update": "npm install && npm run collaborator:sync-keys"
   },
   "repository": {
     "type": "git",
@@ -20,5 +27,21 @@
   "bugs": {
     "url": "https://github.com/fredsiika/piscine/issues"
   },
-  "homepage": "https://github.com/fredsiika/piscine#readme"
+  "homepage": "https://github.com/fredsiika/piscine#readme",
+  "devDependencies": {
+    "git-signed": "^0.1.3",
+    "husky": "^1.1.4"
+  },
+  "contributors": [
+    {
+      "name": "Fred Siika",
+      "email": "fredsiika@gmail.com",
+      "key": "hkp://keys.gnupg.net#A46B6A2F4A2A877E0C1C874A6ED94F6C3C8F55B8"
+    },
+    {
+      "name": "fredsiika",
+      "email": "fredsiika@gmail.com",
+      "key": "hkp://keys.gnupg.net#A46B6A2F4A2A877E0C1C874A6ED94F6C3C8F55B8"
+    }
+  ]
 }
