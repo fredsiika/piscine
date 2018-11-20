@@ -8,10 +8,15 @@
     "collaborator:export-key": "git-signed --export",
     "collaborator:sync-keys": "git-signed --sync",
     "test:commit-signatures": "git-signed ad713da",
+    "update": "npm install && npm run collaborator:sync-keys",
+    "test": "npm run test:commit-signatures"
+  },
+  "husky": {
+    "hooks": {
     "precommit": "npm run test",
     "postcommit": "npm run test:commit-signatures",
-    "postmerge": "npm install && npm run collaborator:sync-keys",
-    "update": "npm install && npm run collaborator:sync-keys"
+    "postmerge": "npm install && npm run collaborator:sync-keys"
+    }
   },
   "repository": {
     "type": "git",
