@@ -210,3 +210,6 @@ alias gcc='gcc -g -Wall -Wextra -Werror'
 
 # GIT: Show all ignored files
 alias ignored="git ls-files --others -i --exclude-standard"
+
+# Use `wc` to count lines in a document
+alias countlines="wc -l"
