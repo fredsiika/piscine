@@ -213,3 +213,8 @@ alias ignored="git ls-files --others -i --exclude-standard"
 
 # Use `wc` to count lines in a document
 alias countlines="wc -l"
+
+# 42FileChecker is a tiny bash script developed at 42 school 
+# for testing and checking the files according to the rules 
+# of the subjects.
+alias 42FileChecker='bash ~/42FileChecker/42FileChecker.sh'
