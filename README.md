@@ -3,14 +3,11 @@
 ---
 [![iTerm-screenshot](/iterm-screenshot.png)](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10)
 
-**[Full installation video below]((https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10))**
 ## Installation
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ### Using Git and the bootstrap script
-[![asciicast](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU.svg)](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10)
-
 You can clone the repository wherever you want (I like to keep it in `~/Piscine/dotfiles`). 
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
@@ -64,6 +61,19 @@ npm config set prefix '~/.npm-global'
 4. Back on the command line, update your system variables:
  ```bashsource ~/.profile
  ```
+ 5. On the command line, update your system variables:
+ ```bash
+ source ~/.profile
+ ```
+ 6. To test your new configuration, install a package globally without using `**sudo**`:
+ ```bash
+ npm install -g jshint
+ ```
+Instead of steps 2-4, you can use the corresponding ENV variable (e.g. if you don’t want to modify **~/.profile** ):
+```bash
+NPM_CONFIG_PREFIX=~/.npm-global
+```
+
 [Here's the official tutorial from NPM](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
 ## Sensible macOS defaults
