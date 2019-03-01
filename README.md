@@ -64,6 +64,19 @@ npm config set prefix '~/.npm-global'
 4. Back on the command line, update your system variables:
  ```bashsource ~/.profile
  ```
+ 5. On the command line, update your system variables:
+ ```bash
+ source ~/.profile
+ ```
+ 6. To test your new configuration, install a package globally without using `**sudo**`:
+ ```bash
+ npm install -g jshint
+ ```
+Instead of steps 2-4, you can use the corresponding ENV variable (e.g. if you don’t want to modify **~/.profile** ):
+```bash
+NPM_CONFIG_PREFIX=~/.npm-global
+```
+
 [Here's the official tutorial from NPM](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
 ## Sensible macOS defaults
