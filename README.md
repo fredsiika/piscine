@@ -8,8 +8,6 @@
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ### Using Git and the bootstrap script
-[![asciicast](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU.svg)](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10)
-
 You can clone the repository wherever you want (I like to keep it in `~/Piscine/dotfiles`). 
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
