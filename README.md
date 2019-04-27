@@ -1,5 +1,5 @@
 # Fred Siika's Piscine Dotfiles
-42 Silicon Valley August 2018 Piscine dotfiles and iMac configuration
+Dotfiles and iMac configuration
 ---
 [![iTerm-screenshot](/iterm-screenshot.png)](https://asciinema.org/a/eU6brNyNJ3KMzQdw4mLq8iWiU?t=2:10)
 
