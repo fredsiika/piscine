@@ -228,3 +228,9 @@ alias prettier='npx prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
 
 # Alternatively, run this
 # ./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
+
+# hub - use GitHub from the command line
+alias hub="/usr/local/Cellar/hub/2.12.8/bin/hub"
+
+# Wraps git automatically
+eval "$(hub alias -s)"

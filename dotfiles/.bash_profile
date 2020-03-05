@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-#export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -47,15 +47,26 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-#source ~/.bash_profile
-
 # Add brew --prefix coreutils to path
 export PATH="$PATH/:$(brew --prefix coreutils)/libexec/gnubin"
 
 # Add mysql server to path
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
+# Add mysql cli to path
+export PATH="/usr/local/mysql/bin:$PATH"
+
+# Miscellaneous files
+export PATH="/usr/local:$PATH"
+
 # Ifconfig command which is depricated 
 export PATH="/sbin:$PATH"
 
-#source ~/.bash_profile
+# Ruby executables
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# NPM global modules
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+# Homebrew Celars included to path
+export PATH="/usr/local/Cellar:$PATH"
