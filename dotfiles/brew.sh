@@ -57,7 +57,6 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
