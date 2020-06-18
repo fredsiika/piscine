@@ -12,14 +12,16 @@ You can clone the repository wherever you want (I like to keep it in `~/Piscine/
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/fredsiika/piscine.git && cd piscine/dotfiles && source bootstrap.sh
-```
+# Clone this repository
+git clone https://github.com/fredsiika/piscine.git 
 
-To update, `cd` into your local `dotfiles` repository and then:
+# Move into the dotfiles directory
+cd piscine/dotfiles 
 
-```bash
+# To Update, start the bootstrap script
 source bootstrap.sh
 ```
+
 
 Alternatively, to update while avoiding the confirmation prompt:
 

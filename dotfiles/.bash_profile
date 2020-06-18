@@ -70,3 +70,6 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Homebrew Celars included to path
 export PATH="/usr/local/Cellar:$PATH"
+
+# npm command to prevent delayed running of malicious npm packages.
+npm config set ignore-scripts true

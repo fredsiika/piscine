@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 # Install command-line tools using Homebrew.
 
 # Make sure we’re using the latest Homebrew.
@@ -14,34 +17,53 @@ brew install coreutils
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
+
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
+
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install Bash 4.
+brew install gnu-sed
+
+# Install latest version of Bash 
+brew install bash
+brew install bash-completion
+
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
-#brew install bash
-#brew install bash-completion2
 
+# For manual setup of switching from zsh -> bash: 
+# Source: https://apple.stackexchange.com/questions/55989/change-my-shell-to-a-different-bash-version-at-usr-local-bin-bash
+# Summary (Steps):
+# 1. `brew install bash`
+# 2. `sudo vi /etc/shells` and add `/usr/local/bin/bash` to the list, then
+# 3. `chsh -s /usr/local/bin/bash [your_username]` 
+# 4. Restart your terminal in order for changes to take place.
+
+# For automated setup of switching from zsh -> bash:
 # Switch to using brew-installed bash as default shell
-#if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-#  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-#  chsh -s /usr/local/bin/bash;
-#fi;
+# if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+#   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+#   chsh -s /usr/local/bin/bash;
+# fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`
+brew install wget
+
+# Install git-related tools
+brew install git
+brew install git-lfs
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+
+# Install file directory pretty print tool
+brew install tree
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -77,10 +99,8 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
-brew install git
-brew install git-lfs
-brew install imagemagick --with-webp
+brew install exiv2
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -89,7 +109,6 @@ brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
-brew install tree
 brew install vbindiff
 brew install zopfli
 
