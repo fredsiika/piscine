@@ -234,3 +234,6 @@ alias hub="/usr/local/Cellar/hub/2.12.8/bin/hub"
 
 # Wraps git automatically
 eval "$(hub alias -s)"
+
+# Shortcut to volumes folder
+alias hd="cd /Volumes/Seagate"
