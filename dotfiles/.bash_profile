@@ -73,3 +73,13 @@ export PATH="/usr/local/Cellar:$PATH"
 
 # npm command to prevent delayed running of malicious npm packages.
 npm config set ignore-scripts true
+
+# Configuring the RubyGems environment
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+
+# Configure `fastlane` app environment variables. 
+# `fastlane` handles auto deployment to iOS App Store/Google Play Store <https://docs.fastlane.tools>
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
