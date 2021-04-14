@@ -21,6 +21,7 @@ alias p="cd ~/Desktop/Projects"
 alias g="git"
 alias dot="cd ~/dotfiles ls -al"
 alias icloud="cd ~/Library/CloudStorage/iCloud\ Drive/"
+alias dr="cd ~/OneDrive\ -\ Capco/"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
