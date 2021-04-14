@@ -59,7 +59,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 # Miscellaneous files
 export PATH="/usr/local:$PATH"
 
-# Ifconfig command which is depricated 
+# Ifconfig command which is depricated
 export PATH="/sbin:$PATH"
 
 # Ruby executables
@@ -78,8 +78,14 @@ npm config set ignore-scripts true
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
-# Configure `fastlane` app environment variables. 
+# Configure `fastlane` app environment variables.
 # `fastlane` handles auto deployment to iOS App Store/Google Play Store <https://docs.fastlane.tools>
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Configuring ANDROID_HOME environment variable for React-Native Development.
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools

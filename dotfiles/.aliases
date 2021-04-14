@@ -17,7 +17,7 @@ alias d="cd ~/Documents"
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd ~/Desktop/Projects"
 alias g="git"
 alias dot="cd ~/dotfiles ls -al"
 alias icloud="cd ~/Library/CloudStorage/iCloud\ Drive/"
@@ -218,8 +218,8 @@ alias ignored="git ls-files --others -i --exclude-standard"
 # Use `wc` to count lines in a document
 alias countlines="wc -l"
 
-# 42FileChecker is a tiny bash script developed at 42 school 
-# for testing and checking the files according to the rules 
+# 42FileChecker is a tiny bash script developed at 42 school
+# for testing and checking the files according to the rules
 # of the subjects.
 alias 42FileChecker='bash ~/42FileChecker/42FileChecker.sh'
 
@@ -230,10 +230,15 @@ alias prettier='npx prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
 # ./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
 
 # hub - use GitHub from the command line
-alias hub="/usr/local/Cellar/hub/2.12.8/bin/hub"
+# alias hub="/usr/local/Cellar/hub/2.12.8/bin/hub"
 
 # Wraps git automatically
 eval "$(hub alias -s)"
 
 # Shortcut to volumes folder
 alias hd="cd /Volumes/Seagate"
+
+# Access system info
+alias envinfo="npx envinfo --binaries --system"
+
+
